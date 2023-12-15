@@ -10,4 +10,5 @@
 
 .box:hover{
     background-color: blue;
+    transform: scale(1.2);
 }
