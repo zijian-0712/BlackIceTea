@@ -1,6 +1,7 @@
 .box{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: aqua;
     left: 20%;
     right: 20%;
