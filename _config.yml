@@ -1,0 +1,2 @@
+baseurl: "/BlackIceTea"
+<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
