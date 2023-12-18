@@ -5,6 +5,8 @@
     transition: all 0.5s;
     text-decoration: none;
     box-sizing: border-box;
+    
+    cursor:default;
 }
 
 body{
@@ -20,6 +22,8 @@ body{
 }
 
 .content{
+    position: relative;
+
     display: flex;
     width: 256px;
     height: 360px;
@@ -80,6 +84,9 @@ body{
 }
 
 .content a{
+    position: absolute;
+    bottom: 32px;
+
     display: flex;
     padding: 12px 40px;
     align-items: center;
@@ -95,9 +102,12 @@ body{
     font-style:normal;
     font-weight: 600;
     line-height: 24px; 
+
 }
 
 .content a:hover{
     background-color: #262146;
     color: white;
+
+    cursor:pointer;
 }
