@@ -4,6 +4,7 @@
     padding: 0;
     transition: all 0.5s;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,32 +23,47 @@ body{
     display: flex;
     width: 256px;
     height: 360px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
     border-radius: 32px;
     background: #FFF;
+}
+
+
+.content:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 
+    0px 5px 10px 0px rgba(99, 99, 99, 0.10),
+    0px 19px 19px 0px rgba(99, 99, 99, 0.09), 
+    0px 43px 26px 0px rgba(99, 99, 99, 0.05), 
+    0px 76px 30px 0px rgba(99, 99, 99, 0.01), 
+    0px 119px 33px 0px rgba(99, 99, 99, 0.00);
 }
 
 .content div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
     align-self: stretch;
 }
 
-.content div img{
+/* .content div img{
     border-radius: 20px;
-    background: url(<path-to-image>), lightgray -132.792px -71.901px / 214.435% 190.228% no-repeat;
-}
+    width: 216px;
+    height: 137px;
+} */
 
 
 .content div h3{
     color: #262146;
     font-family: Inter;
-    font-size: 36px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -72,11 +88,16 @@ body{
     border-radius: 48px;
     background: #F5F5F5;
 
-    color: #000;
+    color: #888888;
     text-align: center;
     font-family: Inter;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+    font-style:normal;
+    font-weight: 600;
     line-height: 24px; 
+}
+
+.content a:hover{
+    background-color: #262146;
+    color: white;
 }
