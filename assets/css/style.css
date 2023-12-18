@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     transition: all 0.5s;
+    text-decoration: none;
 }
 
 body{
@@ -37,6 +38,12 @@ body{
     align-self: stretch;
 }
 
+.content div img{
+    border-radius: 20px;
+    background: url(<path-to-image>), lightgray -132.792px -71.901px / 214.435% 190.228% no-repeat;
+}
+
+
 .content div h3{
     color: #262146;
     font-family: Inter;
@@ -48,6 +55,24 @@ body{
 
 .content div p{
     color: #999;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.content a{
+    display: flex;
+    padding: 12px 40px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 48px;
+    background: #F5F5F5;
+
+    color: #000;
     text-align: center;
     font-family: Inter;
     font-size: 16px;
