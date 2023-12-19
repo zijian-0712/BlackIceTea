@@ -192,5 +192,6 @@ body {
 .runtime {
     display: flex;
     position: relative;
-    background-image: url(images\source\image2.png);
+    background-image: url(..\images\source\image2.png);
+    height: 100px;
 }
