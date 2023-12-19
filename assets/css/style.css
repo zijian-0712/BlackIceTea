@@ -160,7 +160,9 @@ body {
     bottom: 32px;
 
     display: flex;
-    padding: 12px 40px;
+    height: 48px;
+    width: 160px;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 
@@ -182,4 +184,13 @@ body {
     color: white;
     font-weight: 700;
     cursor: pointer;
+    letter-spacing: 2px;
+}
+
+/* 轮播图 */
+
+.runtime {
+    display: flex;
+    position: relative;
+    background-image: url(images\source\image2.png);
 }
