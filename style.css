@@ -229,7 +229,7 @@ body {
     /* padding-left: 48px; */
     width: 180px;
     height: 280px;
-    background-position: 30%;
+    background-position: 35%;
     background-size: 500px 300px;
     z-index: 1;
     border-radius: 16px;
@@ -240,6 +240,9 @@ body {
 
 .item:hover .item-content h3 {
     opacity: 1;
+    font-size: 16px;
+    font-weight: 700;
+    filter: drop-shadow(0 0 8px #2476EC);
 }
 
 .item-content {
