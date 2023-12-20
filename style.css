@@ -222,10 +222,12 @@ body {
 
 .item {
     transition: all .5s;
-    display: inline-block;
+    display: flex;
     position: absolute;
-    width: 200px;
-    height: 300px;
+    align-items: center;
+    padding-left: 32px;
+    width: 180px;
+    height: 280px;
     background-position: center;
     background-size: cover;
     z-index: 1;
@@ -236,6 +238,23 @@ body {
 
 
 }
+
+.item-content {
+    color: white;
+    width: 320px;
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        filter: drop-shadow();
+    }
+
+    a {
+        background-color: #FFF;
+    }
+
+}
+
 
 .item:nth-child(1),
 .item:nth-child(2) {
@@ -253,21 +272,25 @@ body {
 }
 
 .item:nth-child(4) {
-    left: calc(50% + 220px);
+    left: calc(50% + 180px + 16px);
 }
 
 .item:nth-child(5) {
-    left: calc(50% + 440px);
+    left: calc(50% + (180px + 16px) *2);
 }
 
 .item:nth-child(n + 6) {
-    left: calc(50% + 660px);
+    left: calc(50% + (180px + 16px) *3);
     opacity: 0;
 }
 
 
 
 .runtime-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     position: absolute;
     bottom: 32px;
     z-index: 2;
