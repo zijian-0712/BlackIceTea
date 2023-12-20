@@ -207,7 +207,7 @@ body {
     position: relative;
     width: 1000px;
     height: 600px;
-    background-color: white;
+    background-color: #F5F5F5;
     box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.10), 0px 26px 26px 0px rgba(0, 0, 0, 0.09), 0px 59px 35px 0px rgba(0, 0, 0, 0.05), 0px 105px 42px 0px rgba(0, 0, 0, 0.01), 0px 164px 46px 0px rgba(0, 0, 0, 0.00);
 }
 
@@ -218,6 +218,39 @@ body {
     gap: 16px; */
     width: max-content;
     overflow: hidden;
+}
+
+
+.item-hot {
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    z-index: 3;
+
+}
+
+.item-hot:nth-child(1) {
+    left: 50%;
+}
+
+.item-hot:nth-child(2) {
+    left: calc(50% + 180px + 16px);
+}
+
+.item-hot:nth-child(3) {
+    left: calc(50% + (180px + 16px) *2);
+}
+
+
+.item-js-hover {
+    background-size: 600px 360px !important;
+
+    .item-content h3 {
+        opacity: 1;
+        font-size: 16px;
+        font-weight: 700;
+        filter: drop-shadow(0 0 8px #2476EC);
+    }
 }
 
 .item {
