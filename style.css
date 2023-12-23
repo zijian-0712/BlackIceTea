@@ -77,13 +77,105 @@ body {
 
 
 .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80px;
     height: 80px;
 }
 
+.toggle-body {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.toggle-box {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: #2476EC;
+    cursor: pointer;
+}
 
+.toggle-box:nth-child(1) {
+    left: 0;
+    top: 0;
+}
 
+.toggle-box1 {
+    transform: translate(2px, 2px);
+}
+
+.toggle-box:nth-child(2) {
+    left: 8px;
+    top: 0;
+}
+
+.toggle-box2 {
+    transform: translate(0px, 2px);
+}
+
+.toggle-box:nth-child(3) {
+    left: 16px;
+    top: 0;
+}
+
+.toggle-box3 {
+    transform: translate(-2px, 2px);
+}
+
+.toggle-box:nth-child(4) {
+    left: 0;
+    top: 8px;
+}
+
+.toggle-box4 {
+    transform: translate(2px, 0px);
+}
+
+.toggle-box:nth-child(5) {
+    left: 8px;
+    top: 8px;
+}
+
+.toggle-box:nth-child(6) {
+    left: 16px;
+    top: 8px;
+}
+
+.toggle-box6 {
+    transform: translate(-2px, 0px);
+}
+
+.toggle-box:nth-child(7) {
+    left: 0;
+    top: 16px;
+}
+
+.toggle-box7 {
+    transform: translate(2px, -2px);
+}
+
+.toggle-box:nth-child(8) {
+    left: 8px;
+    top: 16px;
+}
+
+.toggle-box8 {
+    transform: translate(0px, -2px);
+}
+
+.toggle-box:nth-child(9) {
+    left: 16px;
+    top: 16px;
+}
+
+.toggle-box9 {
+    transform: translate(-2px, -2px);
+}
 
 
 

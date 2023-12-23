@@ -99,4 +99,36 @@ hots[2].addEventListener("mousedown", function () {
 })
 
 
+// 
+let toggle = document.querySelector('.toggle-body');
+let toggleBoxs = document.querySelectorAll('.toggle-box');
+let isToggle;
+
+toggle.onclick = function () {
+    if (!isToggle) {
+        toggleBoxs[0].classList.add('toggle-box1');
+        toggleBoxs[1].classList.add('toggle-box2');
+        toggleBoxs[2].classList.add('toggle-box3');
+        toggleBoxs[3].classList.add('toggle-box4');
+        toggleBoxs[5].classList.add('toggle-box6');
+        toggleBoxs[6].classList.add('toggle-box7');
+        toggleBoxs[7].classList.add('toggle-box8');
+        toggleBoxs[8].classList.add('toggle-box9');
+        isToggle = true;
+    }
+    else {
+        toggleBoxs[0].classList.remove('toggle-box1');
+        toggleBoxs[1].classList.remove('toggle-box2');
+        toggleBoxs[2].classList.remove('toggle-box3');
+        toggleBoxs[3].classList.remove('toggle-box4');
+        toggleBoxs[5].classList.remove('toggle-box6');
+        toggleBoxs[6].classList.remove('toggle-box7');
+        toggleBoxs[7].classList.remove('toggle-box8');
+        toggleBoxs[8].classList.remove('toggle-box9');
+        isToggle = false;
+    }
+
+}
+
+
 
