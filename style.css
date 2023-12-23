@@ -11,18 +11,70 @@
 
 body {
     background: #F5F5F5;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-color: #4E5263;
+    background: url(public\images\1-1.png);
 }
 
 
 
+
+
+
+
+
+
+
+.avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+.avatar:hover div {
+    width: 36px;
+    height: 36px;
+}
+
+.avatar:hover img {
+    width: 44px;
+    height: 44px;
+    filter: drop-shadow(0 0 4px #A7C8F7);
+}
+
+.avatar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: #2476EC solid 2px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+}
+
 /* index */
 .index {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     background-color: white;
+    gap: 200px;
 }
 
 .index ul {
@@ -77,6 +129,7 @@ body {
 
 
 .toggle {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,17 +139,18 @@ body {
 
 .toggle-body {
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 10px;
     cursor: pointer;
 }
 
 .toggle-box {
     position: absolute;
-    height: 4px;
-    width: 4px;
+    height: 6px;
+    width: 6px;
     background-color: #2476EC;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -106,75 +160,75 @@ body {
 }
 
 .toggle-box1 {
-    transform: translate(2px, 2px);
+    transform: translate(4px, 4px);
 }
 
 .toggle-box:nth-child(2) {
-    left: 8px;
+    left: 12px;
     top: 0;
 }
 
 .toggle-box2 {
-    transform: translate(0px, 2px);
+    transform: translate(0px, 4px);
 }
 
 .toggle-box:nth-child(3) {
-    left: 16px;
+    left: 24px;
     top: 0;
 }
 
 .toggle-box3 {
-    transform: translate(-2px, 2px);
+    transform: translate(-4px, 4px);
 }
 
 .toggle-box:nth-child(4) {
     left: 0;
-    top: 8px;
+    top: 12px;
 }
 
 .toggle-box4 {
-    transform: translate(2px, 0px);
+    transform: translate(4px, 0px);
 }
 
 .toggle-box:nth-child(5) {
-    left: 8px;
-    top: 8px;
+    left: 12px;
+    top: 12px;
 }
 
 .toggle-box:nth-child(6) {
-    left: 16px;
-    top: 8px;
+    left: 24px;
+    top: 12px;
 }
 
 .toggle-box6 {
-    transform: translate(-2px, 0px);
+    transform: translate(-4px, 0px);
 }
 
 .toggle-box:nth-child(7) {
     left: 0;
-    top: 16px;
+    top: 24px;
 }
 
 .toggle-box7 {
-    transform: translate(2px, -2px);
+    transform: translate(4px, -4px);
 }
 
 .toggle-box:nth-child(8) {
-    left: 8px;
-    top: 16px;
+    left: 12px;
+    top: 24px;
 }
 
 .toggle-box8 {
-    transform: translate(0px, -2px);
+    transform: translate(0px, -4px);
 }
 
 .toggle-box:nth-child(9) {
-    left: 16px;
-    top: 16px;
+    left: 24px;
+    top: 24px;
 }
 
 .toggle-box9 {
-    transform: translate(-2px, -2px);
+    transform: translate(-4px, -4px);
 }
 
 
@@ -297,7 +351,9 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 680px;
+    height: 800px;
+    overflow: hidden;
+    top: -400px;
 
 }
 
